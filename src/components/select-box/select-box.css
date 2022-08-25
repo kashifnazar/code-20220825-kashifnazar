@@ -1,0 +1,17 @@
+.select-box {
+    background-color: white;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+}
+
+.select-box .title {
+    color: #6D6D6D;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.select-box .description {
+    color: #000;
+    font-family: ubuntu;
+    font-size: 22px;
+}

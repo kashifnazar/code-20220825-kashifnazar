@@ -1,0 +1,9 @@
+.main-screen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/public/images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-bottom: 3rem;
+  }

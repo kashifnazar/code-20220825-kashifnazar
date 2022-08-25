@@ -4,7 +4,9 @@ type Props = {}
 
 const Logo = (props: Props) => {
   return (
-    <div>Logo</div>
+    <div>
+      <img src='/images/white-logo.png' alt="Your Logo" />
+    </div>
   )
 }
 

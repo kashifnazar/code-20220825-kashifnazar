@@ -1,0 +1,19 @@
+.banner {
+    margin-bottom: 8rem;
+}
+
+.banner h1 {
+    width: 60%;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+.banner h2 {
+    font-family: ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
