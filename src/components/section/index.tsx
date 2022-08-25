@@ -8,11 +8,12 @@ type Props = {
     description: string
 }
 
-const Section:FC<WithChildren<Props>> = ({title, description}) => {
+const Section:FC<WithChildren<Props>> = ({title, description, children}) => {
   return (
     <section className='section'>
         <h2 className='title'>{title}</h2>
         <h4 className='description'>{description}</h4>
+        {children}
     </section>
   )
 }
