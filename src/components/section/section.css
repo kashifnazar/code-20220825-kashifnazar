@@ -1,13 +1,16 @@
 section {
-  width: 40%;
+  width: 90%;
   color: #000
 }
 
 section .title {
     font-size: 64px;
+    margin-bottom: 1rem;
 }
 
 section .description {
   font-size: 18px;
   font-family: ubuntu;
+  width: 25%;
+  font-weight: 400;
 }
