@@ -1,0 +1,13 @@
+section {
+  width: 40%;
+  color: #000
+}
+
+section .title {
+    font-size: 64px;
+}
+
+section .description {
+  font-size: 18px;
+  font-family: ubuntu;
+}
