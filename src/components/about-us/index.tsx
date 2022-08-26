@@ -14,11 +14,11 @@ const chapterItems: Array<ChapterProps> = [{
 },{
     title: 'Chapter III',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun',
-    image: '/images/chapter-3.png'
+    image: '/images/explore-2.png'
 },{
     title: 'Chapter IV',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun',
-    image: '/images/chapter-4.png'
+    image: '/images/explore-1.png'
 }
 ] 
 

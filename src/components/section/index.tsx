@@ -1,6 +1,3 @@
-import React from 'react'
-import { WithChildren } from '../../types/with-children'
-
 import './section.css'
 
 type Props<T> = {

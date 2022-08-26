@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import Offers from '../offers'
 import { OfferItemProps } from '../offers/offer-item'
 import Section from '../section'
 

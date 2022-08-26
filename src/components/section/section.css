@@ -17,4 +17,14 @@ section .description {
 section div.gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+section div.gallery-item {
+  max-width: 50%;
+}
+
+section div.gallery-item img {
+  border-radius: 50px;
 }
