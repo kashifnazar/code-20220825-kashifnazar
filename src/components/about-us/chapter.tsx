@@ -8,7 +8,7 @@ export type ChapterProps = {
 
 const Chapter:FC<ChapterProps> = ({image, title, description}) => {
   return (
-    <div>
+    <div className='chapter'>
         <img src={image} alt={title} />
         <div>{title}</div>
         <div>{description}</div>

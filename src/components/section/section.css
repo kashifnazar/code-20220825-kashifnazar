@@ -1,5 +1,4 @@
 section {
-  width: 90%;
   color: #000
 }
 
@@ -13,4 +12,9 @@ section .description {
   font-family: ubuntu;
   width: 25%;
   font-weight: 400;
+}
+
+section div.gallery {
+  display: flex;
+  flex-wrap: wrap;
 }

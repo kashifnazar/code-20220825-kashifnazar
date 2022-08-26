@@ -6,7 +6,7 @@ export type OfferItemProps = {
 } & OfferItemDetailsProps
 
 const OfferItem: FC<OfferItemProps> = ({image, description, price, size}) => 
-       <div>
+       <div className='offer-item'>
             <img src={image} alt={description} />
             <OfferItemDetails {...{price, size, description}}/>
        </div>

@@ -2,10 +2,9 @@
 }
 
 .App .main-area {
-  width: 90%;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .App-logo {

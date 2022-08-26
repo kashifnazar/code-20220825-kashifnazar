@@ -1,0 +1,10 @@
+.chapters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.chapter {
+    margin: 30px;
+}

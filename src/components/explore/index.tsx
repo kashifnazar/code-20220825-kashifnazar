@@ -20,10 +20,7 @@ const offerItems: Array<OfferItemProps> = [
 ]
 
 
-const Explore: FC = () => 
-       (<Section title="Explore" description='From one-guest rooms to penthouses with pools and gardens'>
-            <Offers offerItems={offerItems} />
-        </Section>)
+const Explore: FC = () => <Section<OfferItemProps> title="Explore" description='From one-guest rooms to penthouses with pools and gardens' galleryItems={offerItems}/>
   
 
 
