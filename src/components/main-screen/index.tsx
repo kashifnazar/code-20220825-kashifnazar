@@ -10,7 +10,7 @@ import './main-screen.css'
 
 export const MainScreen = () => {
   return (
-    <div className='main-screen vertical flexbox flex-align-center'>
+    <div className='main-screen vertical flexbox'>
         <Header>
             <Logo />
             <Navigation />
