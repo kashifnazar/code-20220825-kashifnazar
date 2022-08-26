@@ -22,9 +22,10 @@ section div.gallery {
 }
 
 section div.gallery-item {
-  max-width: 50%;
+  width: 45%
 }
 
 section div.gallery-item img {
-  border-radius: 50px;
+  border-radius: 20px;
+  width: 100%;
 }
