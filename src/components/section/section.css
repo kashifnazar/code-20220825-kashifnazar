@@ -3,8 +3,8 @@ section {
 }
 
 section .title {
-    font-size: 64px;
-    margin-bottom: 1rem;
+  font-size: 64px;
+  margin-bottom: 1rem;
 }
 
 section .description {
@@ -22,7 +22,7 @@ section div.gallery {
 }
 
 section div.gallery-item {
-  width: 45%
+  width: 48%
 }
 
 section div.gallery-item img {
@@ -31,5 +31,13 @@ section div.gallery-item img {
 }
 
 section .extra-info {
-  width: 100%
+  position: relative;
+  bottom: 14%;
+  margin: auto;
+  width: 80%;
+  border: 1px solid white;
+  background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
 }

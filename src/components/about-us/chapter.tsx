@@ -1,15 +1,13 @@
 import React, { FC } from 'react'
 
 export type ChapterProps = {
-    image: string
     title: string
     description: string
 }
 
-const Chapter:FC<ChapterProps> = ({image, title, description}) => {
+const Chapter:FC<ChapterProps> = ({title, description}) => {
   return (
     <div className='chapter'>
-        <img src={image} alt={title} />
         <div>{title}</div>
         <div>{description}</div>
     </div>

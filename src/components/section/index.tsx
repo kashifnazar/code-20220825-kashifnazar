@@ -1,12 +1,15 @@
+import { ReactNode } from 'react'
+import { WithImage } from '../../types/with-image'
 import './section.css'
 
 type Props<T> = {
     title: string
     description: string
-    galleryItems: Array<T & {image: string, description: string}>
+    galleryItems: Array<WithImage<T>>
+    getItemDetails: (t: T) => ReactNode
 }
 
-const Section = <T extends unknown>({title, description, galleryItems} : Props<T>) => {
+const Section = <T extends unknown>({title, description, galleryItems, getItemDetails} : Props<WithImage<T>>) => {
   return (
     <section className='section'>
         <div>
@@ -16,10 +19,10 @@ const Section = <T extends unknown>({title, description, galleryItems} : Props<T
 
         <div className="gallery">
           {galleryItems.map(i => <div className="gallery-item">
-                    <img src={i.image} alt={i.description}/>
-                      <div className='extra-info'>Testing</div>
-
-
+                    <img src={i.image} alt={i.image}/>
+                      <div className='extra-info'>
+                      {getItemDetails(i)}
+                      </div>
                     </div>)}
         </div>
 

@@ -1,9 +1,10 @@
-import React, { FC } from 'react'
-import { OfferItemProps } from '../offers/offer-item'
+import { FC } from 'react'
+import { WithImage } from '../../types/with-image'
+import OfferItem, { OfferItemProps } from './offer-item'
 import Section from '../section'
 
 
-const offerItems: Array<OfferItemProps> = [
+const offerItems: Array<WithImage<OfferItemProps>> = [
     {
         description: 'Room with one king-size bed',
         price: 35,
@@ -18,8 +19,9 @@ const offerItems: Array<OfferItemProps> = [
     }
 ]
 
+const getItemDetails = (offer: OfferItemProps) => <OfferItem {...offer} />
 
-const Explore: FC = () => <Section<OfferItemProps> title="Explore" description='From one-guest rooms to penthouses with pools and gardens' galleryItems={offerItems}/>
+const Explore: FC = () => <Section<OfferItemProps> getItemDetails={getItemDetails} title="Explore" description='From one-guest rooms to penthouses with pools and gardens' galleryItems={offerItems}/>
   
 
 

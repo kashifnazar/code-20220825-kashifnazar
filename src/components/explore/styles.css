@@ -1,0 +1,55 @@
+/* https://gridbyexample.com/examples/example7/ */
+
+.offer-item {
+    display: grid;
+    grid-gap: 15px 0;
+    grid-template-columns: [col1-start] 40% [col2-start] 40% [col3-start] 20% [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.offer-item .description {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start;
+    width: 100%;
+    font-size: 14px;
+}
+
+.offer-item .price {
+    grid-column: col1-start;
+    grid-row: row2-start;
+}
+
+.offer-item .size {
+    grid-column: col2-start;
+    grid-row: row2-start;
+}
+
+.offer-item .book {
+    grid-column: col3-start;
+    grid-row: row1-start / row2-end;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.offer-item .button {
+    background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 14px;
+    width: 40px;
+    padding: 4px 10px;
+    color: #000;
+}
+
+.offer-item .book-button {
+    background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    color: #000;
+}
