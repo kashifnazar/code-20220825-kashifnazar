@@ -15,7 +15,12 @@ const Section = <T extends unknown>({title, description, galleryItems} : Props<T
         </div>
 
         <div className="gallery">
-          {galleryItems.map(i => <div className="gallery-item"><img src={i.image} alt={i.description}/></div>)}
+          {galleryItems.map(i => <div className="gallery-item">
+                    <img src={i.image} alt={i.description}/>
+                      <div className='extra-info'>Testing</div>
+
+
+                    </div>)}
         </div>
 
 

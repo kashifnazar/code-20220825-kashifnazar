@@ -29,3 +29,7 @@ section div.gallery-item img {
   border-radius: 20px;
   width: 100%;
 }
+
+section .extra-info {
+  width: 100%
+}
