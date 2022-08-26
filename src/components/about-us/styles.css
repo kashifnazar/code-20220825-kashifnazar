@@ -1,10 +1,16 @@
-.chapters {
+.chapter {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column;
 }
 
+.chapter .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
 
-.chapter {
-    margin: 30px;
+.chapter .description {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%
 }

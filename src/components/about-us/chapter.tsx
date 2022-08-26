@@ -1,5 +1,7 @@
 import React, { FC } from 'react'
 
+import './styles.css'
+
 export type ChapterProps = {
     title: string
     description: string
@@ -8,8 +10,8 @@ export type ChapterProps = {
 const Chapter:FC<ChapterProps> = ({title, description}) => {
   return (
     <div className='chapter'>
-        <div>{title}</div>
-        <div>{description}</div>
+        <div className='title'>{title}</div>
+        <div className='description'>{description}</div>
     </div>
   )
 }
