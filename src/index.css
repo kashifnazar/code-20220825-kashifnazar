@@ -58,7 +58,7 @@ nav li image {
 
 nav li button {
   background-color: transparent;
-  border: solid 2px #FFF;
+  border: solid 2px currentColor;
   border-radius: 10px;
   font-size: 24px;
   padding: 10px 30px;
