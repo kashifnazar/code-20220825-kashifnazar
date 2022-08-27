@@ -15,14 +15,9 @@ export const MainScreen = () => {
             <Logo />
             <Navigation />
         </Header>
-
         <Banner title='Rethink your living & renting' subTitle='Make your stay painless with us'></Banner>
-        
-
         <Filters/>
-
-        <img src="/images/down-arrow.png" alt='Down'/>
-
+        <div className="down-arrow-container"><img src="/images/down-arrow.png" alt='Down'/></div>
     </div>
   )
 }
