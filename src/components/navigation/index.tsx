@@ -7,7 +7,10 @@ const Navigation = (props: Props) => {
 
   return (
     <nav>
-      <ul>
+      <div className='nav-menu'>
+        <img src="/images/hamburger.png" alt="=" />
+      </div>
+      <ul className='nav-list'>
         <li>Explore</li>
         <li>About Us</li>
         <li>Cities <img src="/images/down-arrow.png" alt="Down" /></li>

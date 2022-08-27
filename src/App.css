@@ -50,3 +50,22 @@ svg {
 .curve img {
   width: 100%
 }
+
+
+
+
+@media only screen and (max-width: 1440px) {
+  .curve {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  nav .nav-menu {
+    display: block;
+  }
+
+  nav .nav-list {
+    display: none;
+  }
+}
