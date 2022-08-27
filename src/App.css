@@ -36,12 +36,17 @@
   margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.curve {
+  transform: translateY(-60px);
+}
+
+.curve img {
+  width: 100%
 }

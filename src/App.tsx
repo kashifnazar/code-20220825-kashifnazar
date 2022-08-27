@@ -9,6 +9,7 @@ function App() {
   return (
     <div className='App'>
       <MainScreen />
+      <div className="curve"><img src="/images/curve.png" alt=""/></div>
       <div className='main-area'>
         <Explore />
         <AboutUs />
