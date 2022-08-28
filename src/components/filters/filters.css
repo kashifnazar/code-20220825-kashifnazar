@@ -3,7 +3,6 @@
 }
 
 .filters-container {
-    /* height: 100px; */
     border-radius: 50px;
     border: 2px solid #fff;
     width: fit-content;
@@ -17,11 +16,7 @@
     margin: 1rem;
     border-radius: 20px;
     width: 180px;
-    height: auto;
+    height: 50px;
 }
 
-.filters .filter-item.button {
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-}
+.filters .filter-item.button {}
