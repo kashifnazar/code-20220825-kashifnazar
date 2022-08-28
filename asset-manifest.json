@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rental-website/static/css/main.f1fcf871.css",
-    "main.js": "/rental-website/static/js/main.3089e7eb.js",
-    "static/js/787.9cc14218.chunk.js": "/rental-website/static/js/787.9cc14218.chunk.js",
+    "main.js": "/rental-website/static/js/main.99610358.js",
+    "static/js/787.054cce5e.chunk.js": "/rental-website/static/js/787.054cce5e.chunk.js",
     "static/media/main-bg.png": "/rental-website/static/media/main-bg.e1fe899456aa7252cfdb.png",
     "index.html": "/rental-website/index.html",
     "main.f1fcf871.css.map": "/rental-website/static/css/main.f1fcf871.css.map",
-    "main.3089e7eb.js.map": "/rental-website/static/js/main.3089e7eb.js.map",
-    "787.9cc14218.chunk.js.map": "/rental-website/static/js/787.9cc14218.chunk.js.map"
+    "main.99610358.js.map": "/rental-website/static/js/main.99610358.js.map",
+    "787.054cce5e.chunk.js.map": "/rental-website/static/js/787.054cce5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1fcf871.css",
-    "static/js/main.3089e7eb.js"
+    "static/js/main.99610358.js"
   ]
 }
