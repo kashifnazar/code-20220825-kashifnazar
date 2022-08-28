@@ -1,0 +1,9 @@
+section div.masonry {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  column-gap: 3rem;
+}
+
+section div.masonry .masonry-item img {
+  width: 100%;
+}

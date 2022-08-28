@@ -25,6 +25,6 @@ const chapterItems: Array<WithImage<ChapterProps>> = [{
 
 const getItemDetails = (chapter: ChapterProps) => <Chapter {...chapter} />
 
-const AboutUs: FC = () => <Section<ChapterProps> getItemDetails={getItemDetails} title="About Us" description='Allow us to tell you a short story...' galleryItems={chapterItems}/>
+const AboutUs: FC = () => <Section<ChapterProps> mode='masonry' getItemDetails={getItemDetails} title="About Us" description='Allow us to tell you a short story...' galleryItems={chapterItems}/>
 
 export default AboutUs

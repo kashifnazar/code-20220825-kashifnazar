@@ -1,5 +1,7 @@
 import { ReactNode } from 'react'
 import { WithImage } from '../../types/with-image'
+import Gallery from '../gallery'
+import Masonry from '../masonry'
 import './section.css'
 
 type Props<T> = {
@@ -7,9 +9,10 @@ type Props<T> = {
     description: string
     galleryItems: Array<WithImage<T>>
     getItemDetails: (t: T) => ReactNode
+    mode?: 'gallery' | 'masonry'
 }
 
-const Section = <T extends unknown>({title, description, galleryItems, getItemDetails} : Props<WithImage<T>>) => {
+const Section = <T extends unknown>({title, description, galleryItems, getItemDetails, mode = 'gallery'} : Props<WithImage<T>>) => {
   return (
     <section className='section'>
         <div>
@@ -17,15 +20,11 @@ const Section = <T extends unknown>({title, description, galleryItems, getItemDe
           <h4 className='description'>{description}</h4>
         </div>
 
-        <div className="gallery">
-          {galleryItems.map(i => <div className="gallery-item">
-                    <img src={i.image} alt={i.image}/>
-                      <div className='extra-info'>
-                      {getItemDetails(i)}
-                      </div>
-                    </div>)}
-        </div>
+        { mode === 'gallery' 
+          ? <Gallery galleryItems={galleryItems} getItemDetails={getItemDetails} />
+          : <Masonry galleryItems={galleryItems} getItemDetails={getItemDetails} />
 
+        }
 
     </section>
   )
