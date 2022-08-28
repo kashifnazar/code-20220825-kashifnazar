@@ -37,7 +37,8 @@
     font-family: 'Ubuntu';
     font-style: normal;
     font-size: 14px;
-    width: 40px;
+    width: 40%;
+    text-align: center;
     padding: 5px 10px;
     color: #000;
 }

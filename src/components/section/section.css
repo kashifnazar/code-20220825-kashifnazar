@@ -19,10 +19,23 @@ section div.gallery {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 840px) {
+  section div.gallery {
+    flex-direction: column;
+  }
 }
 
 section div.gallery-item {
-  width: 48%
+  width: 48%;
+}
+
+@media only screen and (max-width: 840px) {
+  section div.gallery-item {
+    width: 95%
+  }
 }
 
 section div.gallery-item img {
