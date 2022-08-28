@@ -9,7 +9,7 @@ type Props<T> = {
 
 const Gallery = <T extends unknown>({galleryItems, getItemDetails} : Props<WithImage<T>>) => 
         <div className="gallery">
-          {galleryItems.map(i => <div className="gallery-item">
+          {galleryItems.map(i => <div key={i.image} className="gallery-item">
                     <img src={i.image} alt={i.image}/>
                       <div className='extra-info'>
                       {getItemDetails(i)}

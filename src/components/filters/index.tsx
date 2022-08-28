@@ -26,7 +26,7 @@ const Filters = (props: Props) => {
     <div className='filters horizontal flexbox justify-center'>
        <div className='filters-container horizontal flexbox justify-center'>
         {
-          filters.map(f => <SelectBox {...f} />)
+          filters.map(f => <SelectBox key={f.title} {...f} />)
         }
 
         <Button icon='/images/search.png' variant='filter-item'>Search</Button>

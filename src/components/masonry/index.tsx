@@ -10,7 +10,7 @@ type Props<T> = {
 const Masonry = <T extends unknown>({galleryItems, getItemDetails} : Props<WithImage<T>>) => 
         <div className="masonry">
           <div>
-            {galleryItems.filter((_1, n) => n%2).map(i => <div className="masonry-item">
+            {galleryItems.filter((_1, n) => n%2).map(i => <div key={i.image} className="masonry-item">
                     <img src={i.image} alt={i.image}/>
                       <div className='extra-info'>
                       {getItemDetails(i)}
@@ -18,7 +18,7 @@ const Masonry = <T extends unknown>({galleryItems, getItemDetails} : Props<WithI
                     </div>)}
           </div>
           <div>
-            {galleryItems.filter((_1, n) => !(n%2)).map(i => <div className="masonry-item">
+            {galleryItems.filter((_1, n) => !(n%2)).map(i => <div key={i.image} className="masonry-item">
                     <img src={i.image} alt={i.image}/>
                       <div className='extra-info'>
                       {getItemDetails(i)}
